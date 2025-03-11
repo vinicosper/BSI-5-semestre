@@ -1,22 +1,33 @@
-public class Pedido extends Cardapio {
-    double taxa;
-    double valor_total;
+import java.util.ArrayList;
+import java.util.List;
 
-    public Pedido(String nome, String comida, int preco, int numero, double valor_total) {
-        super(nome, comida, preco, numero);
-        this.valor_total = valor_total;
-        setTaxa(valor_total);
+public class Pedido {
+    private List<ItemCardapio> itens;
+    private double taxa;
+    private double valorTotal;
+
+    public Pedido() {
+        itens = new ArrayList<>();
+        taxa = 0.0;
+        valorTotal = 0.0;
     }
 
-    public void setTaxa(double valor_total) {
-        this.taxa = valor_total * 0.10;
+    public void adicionarItem(ItemCardapio item) {
+        itens.add(item);
+        valorTotal += item.getPreco();
+        taxa = valorTotal * 0.10;
     }
 
     public void mostrarPedido() {
-        System.out.println("Cliente: " + nome);
-        System.out.println("Comida: " + comida);
-        System.out.println("Preço: R$" + preco);
+        System.out.println("Itens do pedido:");
+        for (ItemCardapio item : itens) {
+            System.out.println("Comida: " + item.getNome() + " | Preço: R$" + item.getPreco());
+        }
         System.out.println("Taxa de Serviço (10%): R$" + taxa);
-        System.out.println("Valor Total: R$" + valor_total + taxa);
+        System.out.println("Valor Total: R$" + (valorTotal + taxa));
+    }
+
+    public double getValorTotal() {
+        return valorTotal + taxa;
     }
 }

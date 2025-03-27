@@ -16,7 +16,7 @@ public class Main extends Arraylist {
 
         System.out.println("Elemento na posição 2: " + lista.get(2));
         lista.remove(2);
-        System.out.println("Elemento removido. \n Índice 2 agora: " + lista.get(2));
+        System.out.println("Elemento removido com sucesso.\n Índice 2 agora: " + lista.get(2));
 
         lista.set(1, 50);
         System.out.println("Novo valor no índice 1: " + lista.get(1));

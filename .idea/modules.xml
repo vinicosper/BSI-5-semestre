@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/resolucao de problemas estruturados/ArrayList/ArrayList.iml" filepath="$PROJECT_DIR$/resolucao de problemas estruturados/ArrayList/ArrayList.iml" />
       <module fileurl="file://$PROJECT_DIR$/resolucao de problemas estruturados/Atividade diagnostica/Atividade diagnostica.iml" filepath="$PROJECT_DIR$/resolucao de problemas estruturados/Atividade diagnostica/Atividade diagnostica.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/BSI-5-semestre.iml" filepath="$PROJECT_DIR$/.idea/BSI-5-semestre.iml" />
+      <module fileurl="file://$PROJECT_DIR$/resolucao de problemas estruturados/pilha/pilha.iml" filepath="$PROJECT_DIR$/resolucao de problemas estruturados/pilha/pilha.iml" />
       <module fileurl="file://$PROJECT_DIR$/resolucao de problemas estruturados/resolucao de problemas estruturados.iml" filepath="$PROJECT_DIR$/resolucao de problemas estruturados/resolucao de problemas estruturados.iml" />
     </modules>
   </component>
